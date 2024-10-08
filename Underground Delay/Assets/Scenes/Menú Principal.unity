@@ -624,7 +624,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -22.90097, y: 122.390175}
+  m_AnchoredPosition: {x: -22.900986, y: 122.390175}
   m_SizeDelta: {x: -205.15, y: -257.993}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &496734763
@@ -639,12 +639,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bc3b525e138e5a4ea9db61e5a65c1af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMeshPro: {fileID: 0}
-  originalColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
 --- !u!114 &496734764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2002,7 +1996,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -22.90097, y: 122.390175}
+  m_AnchoredPosition: {x: -22.900986, y: 122.390175}
   m_SizeDelta: {x: -205.15, y: -257.993}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1158468094
@@ -2017,12 +2011,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bc3b525e138e5a4ea9db61e5a65c1af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMeshPro: {fileID: 0}
-  originalColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
 --- !u!114 &1158468095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2204,6 +2192,7 @@ GameObject:
   - component: {fileID: 1212363836}
   - component: {fileID: 1212363837}
   - component: {fileID: 1212363838}
+  - component: {fileID: 1212363839}
   m_Layer: 0
   m_Name: '- SCRIPTS -'
   m_TagString: Untagged
@@ -2269,6 +2258,18 @@ MonoBehaviour:
   slider: {fileID: 700971398}
   imagenNegra: {fileID: 1420191838}
   brilloSlideValue: 0.1
+--- !u!114 &1212363839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212363834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28d6132ca2f1b2c4cbad697daf8c5b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1262652584
 GameObject:
   m_ObjectHideFlags: 0
@@ -2653,7 +2654,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1389181027}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1212363839}
+        m_TargetAssemblyTypeName: Salir, Assembly-CSharp
+        m_MethodName: Salirse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1389181027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2928,12 +2941,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bc3b525e138e5a4ea9db61e5a65c1af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMeshPro: {fileID: 0}
-  originalColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
 --- !u!114 &1424733957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3142,7 +3149,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 76.5, y: -37.4}
+  m_AnchoredPosition: {x: 76.5, y: -37.399994}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1702350948
@@ -3446,12 +3453,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bc3b525e138e5a4ea9db61e5a65c1af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMeshPro: {fileID: 0}
-  originalColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
 --- !u!1 &1947316475
 GameObject:
   m_ObjectHideFlags: 0
@@ -3570,12 +3571,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bc3b525e138e5a4ea9db61e5a65c1af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMeshPro: {fileID: 0}
-  originalColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
 --- !u!114 &1947769725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3798,12 +3793,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bc3b525e138e5a4ea9db61e5a65c1af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMeshPro: {fileID: 0}
-  originalColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
 --- !u!114 &1996888344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3987,12 +3976,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bc3b525e138e5a4ea9db61e5a65c1af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMeshPro: {fileID: 0}
-  originalColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
 --- !u!114 &2090973882
 MonoBehaviour:
   m_ObjectHideFlags: 0

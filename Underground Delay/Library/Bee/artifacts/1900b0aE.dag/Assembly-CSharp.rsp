@@ -353,6 +353,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.9f1-x86_64/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.9f1-x86_64/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/Menú Principal/Brillo/BrilloNegro.cs"
+"Assets/Scripts/Menú Principal/Salir.cs"
 "Assets/Scripts/Menú Principal/SceneChanger.cs"
 "Assets/Scripts/Menú Principal/Sonido/VolumenGeneral.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
