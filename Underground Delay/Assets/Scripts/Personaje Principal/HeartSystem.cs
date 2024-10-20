@@ -5,31 +5,49 @@ using UnityEngine;
 public class HeartSystem : MonoBehaviour
 {
     public GameObject[] hearts; //Referencia para las vidas.
-    public int life; //La vida que va a tener el personaje.
+    public int life = 3; //La vida que va a tener el personaje.
 
     void Start()
     {
-        
+        UpdateHearts();
     }
 
     void Update()
     {
-        if (life < 1)
+        
+    }
+
+    public void TakeDamage(int damage) //Metodo que reduce la vida.
+    {
+        life -= damage;
+        if (life < 0) life = 0;
+
+        UpdateHearts(); //Actualizamos corazones.
+
+        if (life <= 0)
         {
-            Destroy(hearts[0].gameObject);
-        }
-        else if (life < 2)
-        {
-            Destroy(hearts[1].gameObject);
-        }
-        else if (life < 3)
-        {
-            Destroy(hearts[2].gameObject);
+            Die(); //0 corazones y morimos.
         }
     }
 
-    public void TakeDamage(int d)
+    void UpdateHearts() //Método para actualizar la visualización de los corazones.
     {
-        life -= d;
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (i < life)
+            {
+                hearts[i].SetActive(true);
+            }
+            else
+            {
+                hearts[i].SetActive(false);
+            }
+        }
+    }
+
+    void Die() //Función para detectar cuando el personaje ha muerto.
+    {
+        Time.timeScale = 0f;
+        Debug.Log("El personaje ha muerto");
     }
 }

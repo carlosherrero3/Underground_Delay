@@ -13,9 +13,12 @@ public class CharacterMovement : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundMask;
 
+    public HeartSystem heartSystem; //Referencia para el sript de la vida (HeartSystem).
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        heartSystem = GetComponent<HeartSystem>(); //Obtiene la referencia.
     }
 
     void Update()
@@ -35,5 +38,13 @@ public class CharacterMovement : MonoBehaviour
     public void Jump() //Función para que el personaje salte.
     {
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("DamagingObject")) //Verifica si el objeto es dañino.
+        {
+            heartSystem.TakeDamage(1);
+        }
     }
 }
