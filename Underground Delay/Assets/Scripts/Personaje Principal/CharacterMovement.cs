@@ -15,10 +15,18 @@ public class CharacterMovement : MonoBehaviour
 
     public HeartSystem heartSystem; //Referencia para el sript de la vida (HeartSystem).
 
+    private bool isCrouching = false; //Estado de agachado;
+    public float crouchHeight = 0.5f; //Altura del personaje cuando se agacha.
+    private float originalHeight; //Altura original del personaje.
+    private CapsuleCollider capsuleCollider; //Colider del personaje.
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         heartSystem = GetComponent<HeartSystem>(); //Obtiene la referencia.
+
+        capsuleCollider = GetComponent<CapsuleCollider>();
+        originalHeight = capsuleCollider.height; //Guarda la altura original del colider.
     }
 
     void Update()
@@ -33,11 +41,37 @@ public class CharacterMovement : MonoBehaviour
         {
             Jump();
         }
+
+        if (Input.GetKeyDown(KeyCode.C)) //Si se presiona la tecla "c".
+        {
+            ToggleCrounch();
+            Debug.Log("El personaje se esta agachando");
+        }
     }
 
     public void Jump() //Función para que el personaje salte.
     {
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+    }
+
+    private void ToggleCrounch() //Alterna entre agacharse y levantarse
+    {
+        isCrouching = !isCrouching;
+        capsuleCollider.height = isCrouching ? crouchHeight : originalHeight;
+        if (isCrouching) //Ajusta el centro del collider al agacharse.
+        {
+            capsuleCollider.center = new Vector3(capsuleCollider.center.x, -0.5f, capsuleCollider.center.z);
+        }
+        else
+        {
+            capsuleCollider.center = new Vector3(capsuleCollider.center.x, 0, capsuleCollider.center.z); // Centro vuelve a y = 0
+        }
+        if (isCrouching) //Se asegura de que el personaje no baje al agacharse.
+        {
+            Vector3 position = transform.position;
+            position.y += (originalHeight - crouchHeight) / 2; // Ajusta hacia arriba
+            transform.position = position;
+        }
     }
 
     private void OnCollisionEnter(Collision collision)

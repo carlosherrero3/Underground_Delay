@@ -352,6 +352,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.9f1-x86_64/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.9f1-x86_64/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Scripts/Menú Inicio/ChangeSceneOnInput.cs"
+"Assets/Scripts/Menú Inicio/FadeInText.cs"
 "Assets/Scripts/Menú Pausa/PausarJuego.cs"
 "Assets/Scripts/Menú Pausa/ReanudarJuego.cs"
 "Assets/Scripts/Menú Principal/Brillo/BrilloBlanco.cs"
