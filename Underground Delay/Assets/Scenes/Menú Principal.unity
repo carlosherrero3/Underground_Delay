@@ -299,7 +299,6 @@ RectTransform:
   - {fileID: 629786259}
   - {fileID: 1420191837}
   - {fileID: 714555919}
-  - {fileID: 318211809}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -561,7 +560,7 @@ GameObject:
   - component: {fileID: 318211811}
   - component: {fileID: 318211810}
   m_Layer: 5
-  m_Name: Panel_In
+  m_Name: FUNDIDO NEGRO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -574,17 +573,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318211808}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 0.10691672, y: 0.10691672, z: 0.10691672}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 249987679}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 9.353074}
+  m_SizeDelta: {x: 1920.0001, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &318211810
 Animator:
@@ -2192,7 +2191,6 @@ GameObject:
   - component: {fileID: 1046372538}
   - component: {fileID: 1046372537}
   - component: {fileID: 1046372536}
-  - component: {fileID: 1046372539}
   - component: {fileID: 1046372540}
   m_Layer: 5
   m_Name: "BOT\xD3N - JUGAR"
@@ -2208,14 +2206,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046372534}
-  m_LocalRotation: {x: 0.005535774, y: 0.035505448, z: -0.009149383, w: 0.99931234}
+  m_LocalRotation: {x: 0.005268028, y: 0.035464644, z: 0.028866574, w: 0.9989401}
   m_LocalPosition: {x: 0, y: 0, z: 46.6}
   m_LocalScale: {x: 3.0925956, y: 3.674044, z: 3.438828}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1877834646}
   m_Father: {fileID: 528389899}
-  m_LocalEulerAnglesHint: {x: 0.671, y: 4.064, z: -1.025}
+  m_LocalEulerAnglesHint: {x: 0.486, y: 4.081, z: 3.328}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -72.7, y: 194.3}
@@ -2315,19 +2313,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046372534}
   m_CullTransparentMesh: 1
---- !u!114 &1046372539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1046372534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f5029693fa63b42993c9d1738de65e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  desplazamiento: 70
 --- !u!61 &1046372540
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2772,7 +2757,6 @@ GameObject:
   - component: {fileID: 1177841572}
   - component: {fileID: 1177841571}
   - component: {fileID: 1177841570}
-  - component: {fileID: 1177841574}
   - component: {fileID: 1177841573}
   m_Layer: 5
   m_Name: "BOT\xD3N - GALER\xCDA"
@@ -2788,14 +2772,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177841568}
-  m_LocalRotation: {x: 0.005535774, y: 0.035505448, z: -0.009149383, w: 0.99931234}
+  m_LocalRotation: {x: 0.005268028, y: 0.035464644, z: 0.028866574, w: 0.9989401}
   m_LocalPosition: {x: 0, y: 0, z: 65}
   m_LocalScale: {x: 3.0925956, y: 3.674044, z: 3.438828}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1259647824}
   m_Father: {fileID: 528389899}
-  m_LocalEulerAnglesHint: {x: 0.671, y: 4.064, z: -1.025}
+  m_LocalEulerAnglesHint: {x: 0.486, y: 4.081, z: 3.328}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -72, y: -139}
@@ -2940,19 +2924,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 205.34528, y: 30.086319}
   m_EdgeRadius: 0
---- !u!114 &1177841574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1177841568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f5029693fa63b42993c9d1738de65e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  desplazamiento: 70
 --- !u!1 &1202773899
 GameObject:
   m_ObjectHideFlags: 0
@@ -3255,7 +3226,6 @@ GameObject:
   - component: {fileID: 1262652588}
   - component: {fileID: 1262652587}
   - component: {fileID: 1262652586}
-  - component: {fileID: 1262652590}
   - component: {fileID: 1262652589}
   m_Layer: 5
   m_Name: "BOT\xD3N - OPCIONES"
@@ -3271,14 +3241,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1262652584}
-  m_LocalRotation: {x: 0.005535774, y: 0.035505448, z: -0.009149383, w: 0.99931234}
+  m_LocalRotation: {x: 0.005268028, y: 0.035464644, z: 0.028866574, w: 0.9989401}
   m_LocalPosition: {x: 0, y: 0, z: 58}
   m_LocalScale: {x: 3.0925956, y: 3.674044, z: 3.438828}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 926413578}
   m_Father: {fileID: 528389899}
-  m_LocalEulerAnglesHint: {x: 0.671, y: 4.064, z: -1.025}
+  m_LocalEulerAnglesHint: {x: 0.486, y: 4.081, z: 3.328}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -72, y: 29}
@@ -3435,19 +3405,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 205.56042, y: 30.320318}
   m_EdgeRadius: 0
---- !u!114 &1262652590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1262652584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f5029693fa63b42993c9d1738de65e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  desplazamiento: 70
 --- !u!1 &1288846108
 GameObject:
   m_ObjectHideFlags: 0
@@ -3713,7 +3670,6 @@ GameObject:
   - component: {fileID: 1389181028}
   - component: {fileID: 1389181027}
   - component: {fileID: 1389181026}
-  - component: {fileID: 1389181030}
   - component: {fileID: 1389181029}
   m_Layer: 5
   m_Name: "BOT\xD3N - SALIR"
@@ -3729,14 +3685,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389181024}
-  m_LocalRotation: {x: 0.005535774, y: 0.035505448, z: -0.009149383, w: 0.99931234}
+  m_LocalRotation: {x: 0.005268028, y: 0.035464644, z: 0.028866574, w: 0.9989401}
   m_LocalPosition: {x: 0, y: 0, z: 69}
   m_LocalScale: {x: 3.0925956, y: 3.674044, z: 3.438828}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1130929454}
   m_Father: {fileID: 528389899}
-  m_LocalEulerAnglesHint: {x: 0.671, y: 4.064, z: -1.025}
+  m_LocalEulerAnglesHint: {x: 0.486, y: 4.081, z: 3.328}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -74, y: -319}
@@ -3881,19 +3837,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 205.44669, y: 30.077286}
   m_EdgeRadius: 0
---- !u!114 &1389181030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1389181024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f5029693fa63b42993c9d1738de65e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  desplazamiento: 70
 --- !u!1 &1389281354
 GameObject:
   m_ObjectHideFlags: 0
@@ -5924,3 +5867,4 @@ SceneRoots:
   - {fileID: 249987679}
   - {fileID: 1947316478}
   - {fileID: 1212363835}
+  - {fileID: 318211809}
